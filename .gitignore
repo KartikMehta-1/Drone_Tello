@@ -11,7 +11,7 @@ venv/
 *.mp4
 *.avi
 *.npy
-#models/
+models/
 data/
 ride_data/
 
