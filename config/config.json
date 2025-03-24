@@ -1,0 +1,39 @@
+{
+    "modes": { "mode": "webcam"},
+    "key_CODES": [42, 72, 80, 75, 77, 11, 2, 3, 4, 5, 10, 11, 16, 12, 13, 25, 23, 24],
+    "screen_dimensions": { "width": 720,"height": 960},
+    "modules": {
+        "handgesture_module_path": "D:/Kartik/Projects/Drone_Tello/modules/OpenCV_modules",
+        "pose_estimation_module_path": "D:/Kartik/Projects/Drone_Tello/modules/OpenCV_modules",
+        "mobilenet_module_path": "D:/Kartik/Projects/Drone_Tello/models/Pretrained_Image_recognition_models"
+    },
+    "paths": {
+        "handGesture_Model_path": "D:/Kartik/Projects/Drone_Tello/models/hand_gesture_trained_model/hand_gesture_model.h5",
+        "handGesture_Label_path": "D:/Kartik/Projects/Drone_Tello/models/hand_gesture_trained_model/gesture_classes.npy",
+        "obj_det_model_path": "D:/Kartik/Projects/Drone_Tello/models/Pretrained_Image_recognition_models/MobileNetSSD_Caffe/mobilenet_iter_73000.caffemodel",
+        "obj_det_proto_path": "D:/Kartik/Projects/Drone_Tello/models/Pretrained_Image_recognition_models/MobileNetSSD_Caffe/deploy.prototxt"
+    },
+    "hyperparameters": {
+        "hand_gesture_detection_confidence": 0.8,
+        "object_detection_confidence": 0.95,
+        "pose_min_detection_confidence": 0.7,
+        "pose_min_tracking_confidence": 0.7
+    },
+    "drone_settings": {
+        "drone_speed": 40,
+        "max_altitude": 100,
+        "min_battery_threshold": 20,
+        "state": "idle",
+        "command": "idle",
+        "direction": "idle",
+        "image_mode": "off",
+        "video_mode": "off",
+        "vals": [0,0,0,0]
+    },
+    "pid_control_settings": {
+        "pid": [0.3,0.3,0],
+        "perror": [0,0,0,0],
+        "shLenRange": [175,225]
+    },
+    "fps_control_settings": {"pTime": 0, "cTime": 0}
+}

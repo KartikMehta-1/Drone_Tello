@@ -1,0 +1,18 @@
+# Drone control
+djitellopy==2.4.0
+
+# Computer Vision and AI
+opencv-python>=4.8.0
+numpy>=1.24.0
+tensorflow>=2.13.0          # You’re using GPU check, so go with a stable recent version
+mediapipe>=0.10.0            # Pose, hands, face detection
+pillow                      # Often used with TensorFlow models
+
+# Audio input/output
+speechrecognition
+pyttsx3
+pyaudio                    # Required by speechrecognition for mic input (can be tricky to install)
+
+# System and control
+keyboard
+loguru                     # Optional, better logging than built-in logging (if you ever want to upgrade)

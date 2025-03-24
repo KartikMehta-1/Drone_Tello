@@ -1,0 +1,28 @@
+# Ignore Python cache and environment
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Ignore logs and generated data
+*.log
+*.jpg
+*.png
+*.mp4
+*.avi
+*.npy
+data/
+models/
+data/
+ride_data/
+
+# Ignore Jupyter checkpoints
+**/.ipynb_checkpoints
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
